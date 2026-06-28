@@ -7,6 +7,7 @@ import { useMasters } from '../hooks/useMasters'
 import { InventoryTable } from '../components/InventoryTable'
 import { FiltersBar } from '../components/FiltersBar'
 import { Pagination } from '../components/Pagination'
+import Fab from '../components/Fab'
 import {
   Layers,
   AlertTriangle,
@@ -248,6 +249,7 @@ export default function InventoryList() {
           />
         </div>
       )}
+      <Fab to="/create" />
     </div>
   )
 }
